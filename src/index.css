@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Start header */
+
+.navbar-collapse {
+  margin-left: 130px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-item {
+  margin: 10px;
+  font-size: 17px;
+  color: yellow;
 }
+
+.nav-item:hover {
+  color: yellow;
+  font-size: 16px;
+  border-bottom: 2px solid #000;
+}
+
+@media (max-width: 993px) {
+  .nav-item:hover {
+    border-bottom: none;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* End header */
+
+/* Start buttons */
+
+.signup-txt {
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End buttons */
+
+
+/* Start products */
+
+.card {
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1);
+  box-shadow: 2px 1px 12px 0px rgba(0,0,0,0.52);
+}
+/* End products */
+
+
+/* Start product info */
+
+.product img {
+  transition: all 0.5s ease;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+}
+
+/* End product info */
